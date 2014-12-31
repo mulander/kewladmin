@@ -1,0 +1,57 @@
+<table width="450" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="logo"><br />
+</td>
+</tr>
+<tr>
+<td class="srodek">
+<center>
+<TMPL_INCLUDE NAME='menu.tmpl'>
+<TMPL_IF NAME=ADDED>
+<h4>Domena dodana</h4>
+</TMPL_IF>
+<TMPL_IF NAME=SAVED>
+<h4>Zmiany zapisane</h4>
+</TMPL_IF>
+<TMPL_IF NAME=DELETED>
+<h4>Domena usuniêta</h4>
+</TMPL_IF>
+<TMPL_IF NAME=DELFAIL>
+<h4>Nie posiadasz takiej domeny</h4>
+</TMPL_IF>
+<div class="menu">
+<a href="kewladmin.pl?action=add_domain_f">Dodaj Domene</a>
+</div><br />
+<TMPL_IF NAME=LIST>
+<table class="domains" width="350" cellspacing="0" cellpadding="2">
+<tr>
+	<td colspan="4">Twoje domeny:<br /><br /></td>
+<tr>
+<tr>
+	<td>Domena</td>
+	<td>Path</td>
+	<td colspan="2" align="center">Opcje</td>
+</tr>
+<!-- Tutaj petla z domenami -->
+<TMPL_LOOP NAME=DOMAINS>
+<tr>
+	<td><a href="" title="<TMPL_VAR NAME=DOMAIN_LONG>"><TMPL_VAR NAME=DOMAIN></a></td>
+	<td><a href="" title="<TMPL_VAR NAME=PATH_LONG>"><TMPL_VAR NAME=PATH></a></td>
+	<td align="center"><a href="kewladmin.pl?action=edit_domain&id=<TMPL_VAR NAME=ID>"><img src="../images/icon_edit.gif" border="0" title="Edytuj" alt="Edytuj" /></a></td>
+	<td align="center"><a href="kewladmin.pl?action=del_domain_c&id=<TMPL_VAR NAME=ID>"><img src="../images/icon_delete.gif" border="0" title="Usuñ" alt="Usuñ" /></a></td>
+</tr>
+</TMPL_LOOP>
+</table><br /><br />
+<TMPL_ELSE>
+<h4>Nie masz podpiêtej ¿adnej domeny.</h4><br />
+</TMPL_IF>
+
+<TMPL_INCLUDE NAME='stats.tmpl'> 
+</center>
+</td>
+</tr>
+<tr>
+<td class="foot"><br />
+</td>
+</tr>
+</table>

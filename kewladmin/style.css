@@ -1,0 +1,76 @@
+body {
+background-color: #F7EFE7;
+color: #FF7F00;
+}
+
+a {
+color: #FF6600;
+text-decoration: none;
+}
+
+a:hover {
+color: #FD9651;
+text-decoration: underline;
+}
+
+
+.logo {
+background-image: url(images/im_logo.png);
+height: 107px;
+width: 450px;
+}
+
+.srodek {
+background-image: url(images/im_s.png);
+width: 450px;
+font-size: small;
+}
+
+.foot {
+background-image: url(images/im_f.png);
+width: 450px;
+height: 42px;
+}
+
+.login {
+background-image: url(images/im_log.png);
+color: #FF7F00;
+width: 142px;
+height: 110px;
+font-size: small;
+padding-left: 60px;
+padding-top: 12px;
+}
+
+.inp{
+background-color: #FDF2E6;
+border: 1px solid #FE7F00;
+color: #FE6C00;
+text-align: center;
+font-size: small;
+}
+
+.inp:hover {
+background-color: #FDEAD6;
+border: 1px solid #FE7F00;
+color: #FE6C00;
+text-align: center;
+font-size: small;
+}
+
+.inp{
+background-color: #FDF2E6;
+border: 1px solid #FE7F00;
+color: #FE6C00;
+text-align: center;
+font-size: small;
+}
+
+.menu {
+background-image: url(images/menu.png);
+color: #FF7F00;
+width: 402px;
+height: 23px;
+font-size: small;
+padding-top: 4px;
+}

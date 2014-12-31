@@ -1,0 +1,22 @@
+<table width="450" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="logo"><br />
+</td>
+</tr>
+<tr>
+<td class="srodek">
+<center>
+<TMPL_INCLUDE NAME='menu.tmpl'>
+<h4>Czy jeste¶ pewien, ¿e chcesz usun±æ domene <span style="color: #ff0000"><TMPL_VAR NAME=DOMAIN></span>?</h4>
+<div class="menu">
+<a href="kewladmin.pl?action=del_domain&id=<TMPL_VAR NAME=ID>">Tak</a> | <a href="kewladmin.pl?action=domain">Nie</a>
+</div><br />
+<TMPL_INCLUDE NAME='stats.tmpl'> 
+</center>
+</td>
+</tr>
+<tr>
+<td class="foot"><br />
+</td>
+</tr>
+</table>

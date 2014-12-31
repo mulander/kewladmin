@@ -1,0 +1,35 @@
+<table width="450" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="logo"><br />
+</td>
+</tr>
+<tr>
+<td class="srodek">
+<center>
+<TMPL_IF NAME=FAILED>
+<p><b>Login or password incorrect, please try again.</b></p>
+</TMPL_IF>
+<TMPL_IF NAME=LIMIT>
+<p><b>Login limit exceeded...</b></p>
+</TMPL_IF>
+<TMPL_IF NAME=LOGOUT>
+<p><b>Logged out...</b></p>
+</TMPL_IF>
+Wpisz swój login i has³o aby zalogowaæ siê do panelu.<br /><br>
+<form action="kewladmin.pl" method="post">
+<div class="login">
+Login:<br />
+<input class="inp" type="text" name="login"size="14" maxlength="30" /><br />
+Pass:<br />
+<input class="inp" type="password" name="passwd" size="14" /><br />
+<img src="../images/bl.gif"><br />
+<input class="inp" type="submit" value=" LOGIN " />
+</form>
+</div>
+</center>
+</td>
+</tr>
+<tr>
+<td class="foot"><br />
+</td>
+</tr>

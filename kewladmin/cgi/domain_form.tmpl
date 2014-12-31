@@ -1,0 +1,39 @@
+<table width="450" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="logo"><br />
+</td>
+</tr>
+<tr>
+<td class="srodek">
+<center>
+<TMPL_INCLUDE NAME='menu.tmpl'>
+<TMPL_IF NAME=INFO>
+	<h4><b><TMPL_VAR NAME=INFO_TXT></b></h4>
+</TMPL_IF>
+<h4><b></b></h4>
+
+<form action="kewladmin.pl" method="post">
+Domeny na serwerze aktualizowane sa co 5 minut.<br /><br />
+Domena:<br />
+<input class="inp" type="text" name="domain"size="14" maxlength="30" value="<TMPL_VAR NAME=DOMAIN>" /><br /><br />
+Path:<br />
+<input class="inp" type="text" name="path" size="14" maxlength="255" value="<TMPL_VAR NAME=PATH>" /><br /><br />
+Suffix:<br />
+<input type="radio" name="type" value="1" <TMPL_IF NAME="T1">checked</TMPL_IF> /> *.example.tk<br />
+<input type="radio" name="type" value="2" <TMPL_IF NAME="T2">checked</TMPL_IF> /> *.example.lubin.pl (OFF)<br />
+<input type="radio" name="type" value="3" <TMPL_IF NAME="T3">checked</TMPL_IF> /> *.example.int.pl (OFF)<br />
+<TMPL_IF nAME=ID><input type="hidden" name="id" value="<TMPL_VAR NAME=ID>" /></TMPL_IF>
+<input type="hidden" name="action" value="<TMPL_VAR NAME=ACTION>_domain" />
+<img src="../images/bl.gif"><br /><br />
+<input class="inp" type="submit" value=" <TMPL_VAR NAME=BUTTON> " />
+</form>
+<br /><br />
+<TMPL_INCLUDE NAME='stats.tmpl'>
+</center>
+</td>
+</tr>
+<tr>
+<td class="foot"><br />
+</td>
+</tr>
+</table>

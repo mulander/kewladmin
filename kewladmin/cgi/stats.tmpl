@@ -1,0 +1,7 @@
+Statystyki:<br />
+Typ Twojego konta: <TMPL_VAR NAME=TYPE><br />
+<TMPL_IF NAME=HAS_DOMAIN>
+Podpiête domeny: <TMPL_VAR NAME=CURR_DOM> / <TMPL_VAR NAME=MAX_DOM><br />
+</TMPL_IF>
+<TMPL_VAR NAME=USED> MB / <TMPL_VAR NAME=MAX> <TMPL_VAR NAME=PERCENT><br />
+<div style="border: 1px solid black; height: 10px; width: 100px; text-align:left; vertical-align:middle"><img src="../images/line.png" border="0" height="10" width="<TMPL_VAR NAME=WIDTH>" alt="" /></div>
